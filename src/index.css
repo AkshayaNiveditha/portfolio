@@ -178,7 +178,7 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ---------- sections ---------- */
-section { padding: 56px 0; border-top: 1px solid var(--line); }
+section { padding: 40px 0 56px; }
 .section-head {
   display: flex;
   align-items: baseline;
@@ -301,10 +301,12 @@ a.row:hover { background: var(--surface); }
 
 /* ---------- mobile spacing ---------- */
 @media (max-width: 640px) {
-  .hero { padding: 56px 0 44px; }
-  section { padding: 44px 0; }
-  .section-head { margin-bottom: 22px; }
-  .skill-note { margin-bottom: 8px; }
+  .container { padding: 0 28px; }
+  .hero { padding: 48px 0 36px; }
+  section { padding: 28px 0 44px; }
+  .section-head { margin-bottom: 20px; }
+  .skill-note { margin-bottom: 6px; }
+  .hero h1 { font-size: 2rem; }
 }
 
 /* ---------- footer ---------- */
