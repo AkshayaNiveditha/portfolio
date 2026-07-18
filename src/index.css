@@ -1,3 +1,4 @@
+/* v5-tight-spacing */
 /* ============================================================
    Minimal system: Apple whitespace · Vercel precision · GitHub hairlines
    All colors are variables — dark mode switches automatically.
@@ -99,7 +100,7 @@ a:focus-visible, button:focus-visible {
 .nav-links a:hover { color: var(--ink); }
 
 /* ---------- hero ---------- */
-.hero { padding-top: 96px; padding-bottom: 64px; }
+.hero { padding-top: 72px; padding-bottom: 40px; }
 .hero .photo {
   width: 96px; height: 96px;
   border-radius: 50%;
@@ -181,7 +182,7 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ---------- sections ---------- */
-section { padding-top: 40px; padding-bottom: 56px; }
+section { padding-top: 20px; padding-bottom: 28px; }
 .section-head {
   display: flex;
   align-items: baseline;
@@ -305,8 +306,8 @@ a.row:hover { background: var(--surface); }
 /* ---------- mobile spacing ---------- */
 @media (max-width: 640px) {
   .container { padding-left: 28px; padding-right: 28px; }
-  .hero { padding-top: 56px; padding-bottom: 44px; }
-  section { padding-top: 40px; padding-bottom: 52px; }
+  .hero { padding-top: 40px; padding-bottom: 28px; }
+  section { padding-top: 16px; padding-bottom: 24px; }
   .section-head { margin-bottom: 20px; }
   .skill-note { margin-bottom: 10px; }
   .hero h1 { font-size: 2rem; }
