@@ -61,7 +61,8 @@ a:focus-visible, button:focus-visible {
 .container {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* ---------- nav ---------- */
@@ -98,13 +99,13 @@ a:focus-visible, button:focus-visible {
 .nav-links a:hover { color: var(--ink); }
 
 /* ---------- hero ---------- */
-.hero { padding: 96px 0 64px; }
+.hero { padding-top: 96px; padding-bottom: 64px; }
 .hero .photo {
   width: 96px; height: 96px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
   display: block;
 }
 .hero h1 {
@@ -122,6 +123,7 @@ a:focus-visible, button:focus-visible {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 .dot {
@@ -135,6 +137,7 @@ a:focus-visible, button:focus-visible {
   color: var(--muted);
   font-size: 1.05rem;
   max-width: 56ch;
+  margin: 0 auto;
 }
 .hero .edu {
   margin-top: 14px;
@@ -180,7 +183,7 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ---------- sections ---------- */
-section { padding: 40px 0 56px; }
+section { padding-top: 40px; padding-bottom: 56px; }
 .section-head {
   display: flex;
   align-items: baseline;
@@ -282,7 +285,7 @@ a.row:hover { background: var(--surface); }
 
 /* ---------- contact ---------- */
 .contact p { color: var(--muted); max-width: 56ch; margin-bottom: 24px; }
-.buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+.buttons { display: flex; gap: 12px; flex-wrap: wrap; padding-bottom: 8px; }
 .btn {
   display: inline-flex;
   align-items: center;
@@ -303,11 +306,11 @@ a.row:hover { background: var(--surface); }
 
 /* ---------- mobile spacing ---------- */
 @media (max-width: 640px) {
-  .container { padding: 0 28px; }
-  .hero { padding: 48px 0 36px; }
-  section { padding: 28px 0 44px; }
+  .container { padding-left: 28px; padding-right: 28px; }
+  .hero { padding-top: 56px; padding-bottom: 44px; }
+  section { padding-top: 40px; padding-bottom: 52px; }
   .section-head { margin-bottom: 20px; }
-  .skill-note { margin-bottom: 6px; }
+  .skill-note { margin-bottom: 10px; }
   .hero h1 { font-size: 2rem; }
 }
 
